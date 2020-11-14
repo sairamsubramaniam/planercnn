@@ -91,7 +91,7 @@ class PlaneDatasetSingle(Dataset):
 
     def loadClassMap(self):
         classLabelMap = {}
-        with open(self.dataFolder + 'scannetv2-labels.combined.tsv') as info_file:
+        with open(self.dataFolder + '/scannetv2-labels.combined.tsv') as info_file:
             line_index = 0
             for line in info_file:
                 if line_index > 0:
